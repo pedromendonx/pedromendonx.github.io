@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+</head>
+<style> 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: blue;
+    border: 3px solid blue;
+    padding: 2rem 4rem;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: 400% 400%;
+    animation: colorir 15s ease-in infinite;
+    background: linear-gradient(45deg, blue, black, purple)
+
+}
+
+@keyframes colorir {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+</style>
+
+
+<body class="gradient">
+    
+</body>
+</html>
