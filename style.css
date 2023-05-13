@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.tree {
+    position: absolute;
+    bottom: -50px;
+    width: 220px;
+    right: -80px;
+    animation: tree-animation 2s infinite linear;
+}
+
+.cat {
+    width: 200px;
+    position: absolute;
+    bottom: -05px;
+}
+
+.jump {
+    animation: jump 500ms ease-out; 
+}
+
+@keyframes tree-animation {
+   from {
+    right: -80px;
+   }
+
+   to {
+    right: 100%;
+   }
+}
+@keyframes jump {
+    0% {
+        bottom: -05px;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+    
+    100% {
+        bottom: -05px;
+    }
+}
