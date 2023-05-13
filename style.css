@@ -7,18 +7,19 @@
 .game-board {
     width: 80%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .tree {
     position: absolute;
     bottom: -50px;
-    width: 220px;
-    right: -80px;
-    animation: tree-animation 2s infinite linear;
+    width: 200px;
+    right: -70px;
+    animation: tree-animation 1.5s infinite linear;
 }
 
 .cat {
@@ -29,6 +30,23 @@
 
 .jump {
     animation: jump 500ms ease-out; 
+}
+
+.nuvens {
+    position: absolute;
+    width: 550px;
+    animation: nuvens-animation infinite linear 20s;
+
+}
+
+@keyframes nuvens-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+    
 }
 
 @keyframes tree-animation {
