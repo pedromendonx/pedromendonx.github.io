@@ -18,7 +18,7 @@
     position: absolute;
     bottom: -50px;
     width: 200px;
-    right: -70px;
+    right: -300px;
     animation: tree-animation 1.5s infinite linear;
 }
 
@@ -39,6 +39,52 @@
 
 }
 
+.score {
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+    height: 170px;
+    width: 100px;
+    font-family: "VT323";
+    font-size: large;
+}
+
+.fimdejogo{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    left: 420px;
+    top: 90px;
+    font-size: 70px;
+    visibility: hidden;
+}
+
+.buttonstyle {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    color: black;
+    border: 2px solid #4CAF50;
+    text-align: center;
+    transition-duration: 0,4s;
+    left: 625px;
+    cursor: pointer;
+    top: 525px;
+}
+
+.buttonstyle:hover {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    background-color: aquamarine;
+    color: black;
+    border: 2px solid #4CAF50;
+    text-align: center;
+    transition-duration: 0,4s;
+}
+
 @keyframes nuvens-animation {
     from {
         right: -550px;
@@ -51,7 +97,7 @@
 
 @keyframes tree-animation {
    from {
-    right: -80px;
+    right: -300px;
    }
 
    to {
