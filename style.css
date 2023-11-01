@@ -1,127 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ margin: 0;
+ padding: 0;
 }
 
-.game-board {
-    width: 80%;
-    height: 500px;
-    border-bottom: 15px solid green;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(#87CEEB, #E0F6FF);
-}
-
-.tree {
-    position: absolute;
-    bottom: -50px;
-    width: 200px;
-    right: -300px;
-    animation: tree-animation 1.5s infinite linear;
-}
-
-.cat {
-    width: 200px;
-    position: absolute;
-    bottom: -05px;
-}
-
-.jump {
-    animation: jump 500ms ease-out; 
-}
-
-.nuvens {
-    position: absolute;
-    width: 550px;
-    animation: nuvens-animation infinite linear 20s;
+.fundo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 
 }
 
-.score {
-    position: absolute;
-    top: 30px;
-    left: 1000px;
-    height: 170px;
-    width: 100px;
-    font-family: "VT323";
-    font-size: large;
+.calculo {
+    box-shadow: 6px 6px 13px #fff,
+                6px 6px 13px rgba(0, 0, 0, .16);
+                border-radius: 28px;
+                padding: 16px;
+                display: grid;
+                grid-template-columns: repeat(4,66px);
 }
 
-.fimdejogo{
-    width: 250px;
-    height: 350px;
-    position: absolute;
-    color: black;
-    text-align: center;
-    left: 420px;
-    top: 90px;
-    font-size: 70px;
-    visibility: hidden;
-}
 
-.buttonstyle {
-    width: 70px;
-    height: 30px;
-    position: absolute;
-    color: black;
-    border: 2px solid #4CAF50;
-    text-align: center;
-    transition-duration: 0,4s;
-    left: 625px;
-    cursor: pointer;
-    top: 525px;
-}
-
-.buttonstyle:hover {
-    width: 70px;
-    height: 30px;
-    position: absolute;
-    background-color: aquamarine;
-    color: black;
-    border: 2px solid #4CAF50;
-    text-align: center;
-    transition-duration: 0,4s;
-}
-
-@keyframes nuvens-animation {
-    from {
-        right: -550px;
-    }
-    to {
-        right: 100%;
-    }
-    
-}
-
-@keyframes tree-animation {
-   from {
-    right: -300px;
-   }
-
-   to {
-    right: 100%;
-   }
-}
-@keyframes jump {
-    0% {
-        bottom: -05px;
-    }
-
-    40% {
-        bottom: 180px;
-    }
-
-    50% {
-        bottom: 180px;
-    }
-
-    60% {
-        bottom: 180px;
-    }
-    
-    100% {
-        bottom: -05px;
-    }
-}
