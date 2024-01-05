@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+  }
+  
+  header .header__left {
+    max-width: 62rem;
+    flex: 1;
+    margin-top: 7rem;
+  }
+  
+  header .header__left p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+  }
+  
+
+  

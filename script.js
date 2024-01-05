@@ -1,26 +1,22 @@
-let result = document.getElementById("inputext");
+const navbar = document.querySelector('.navbar');
 
-let calcular=(number)=> {
-    result.value+=number;
+window.addEventListener('scroll', function () {
+  if (this.window.pageYOffset > 0) return navbar.classList.add('active');
+  return navbar.classList.remove('active');
+});
 
-}
 
-let Result=()=>{
-    var result = document.getElementById('result').innerHTML;
-    if(result)
-    {
-        document.getElementById('result').innerHTML = eval(result);
-    }
-    else
-    {
-        document.getElementById('result').innerHTML = "Nada..."
-}
-}
+(() => {
+  if (!localStorage.pureJavaScriptCookies) {
+      document.querySelector(".box-cookies").classList.remove('hide');
+  }
 
-function allclear() {
-    result.value = " ";
-}
+  const acceptCookies = () => {
+      document.querySelector(".box-cookies").classList.add('hide');
+      localStorage.setItem("pureJavaScriptCookies", "accept");
+  };
 
-function delet() {
- result.value = result.value.slice(0,-1);
-}
+  const btnCookies = document.querySelector(".btn-cookies");
+
+  btnCookies.addEventListener('click', acceptCookies);
+})();
