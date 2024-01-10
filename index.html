@@ -11,12 +11,10 @@
         <p> Digite um número em binario: </p>
     </div>
     <div class="inputText">
-        <input type="text" id="inputBinario">
-        <input type="submit" onclick="Calcular()" onkeypress="return TesteBinario(event);" >
+        <input type="text" id="inputBinario" pattern="[01]+" title="digite apenas números 1 e 0" required>
+        <button type="button" onclick="Calcular()">Enviar</button>
     </div>
-    <div class="valorDecimal">
-        <p> Numero em decimal </p>
-        <input type="number" id="inputDecimal">
-    </div>
+
+    <p id="resultado"></p>
 </body>
 </html>
